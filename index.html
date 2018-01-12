@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>abuuzayr@builtforfifty</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="free code camp, builtforfifty" />
+	<title>Camper Leaderboard by abuuzayr@builtforfifty</title>
+	<meta name="description" content="Camper Leaderboard by @abuuzayr for Free Code Camp Back End Certification" />
+	<meta name="keywords" content="free code camp, builtforfifty, camper, leaderboard" />
 	<meta name="author" content="Abu Uzayr @ builtforfifty" />
 	<link rel="shortcut icon" href="img/favicons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#00a8ff">
@@ -20,6 +20,8 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Bootstrap Vue -->
+	<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
 </head>
 
 <body>
@@ -55,14 +57,19 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12">
-							<h5 class="light light-white"></h5>
-							<h3 class="white typed"></h3>
+							<h5 class="light light-white">Free Code Camp</h5>
+							<h3 class="white">Camper Leaderboard</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div id="app">
+		<div class="container">
+			<b-table :items="users" :fields="fields"></b-table>
+		</div>
+	</div>
 	<footer>
 		<div class="container">
 			<div class="row bottom-footer">
@@ -80,7 +87,12 @@
 		</div>
 	</footer>
 	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+	<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+	<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
