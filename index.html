@@ -67,7 +67,11 @@
 	</header>
 	<div id="app">
 		<div class="container">
-			<b-table :items="users" :fields="fields"></b-table>
+			<b-table :items="users" :fields="fields">
+				<template slot="image" scope="data">
+					<img :src="data.item.img" alt="avatar" width="50" height="50">
+				</template>
+			</b-table>
 		</div>
 	</div>
 	<footer>
