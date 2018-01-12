@@ -13,7 +13,7 @@ new Vue({
     data() {
         return {
             fields: [
-                { key: 'img', sortable: false },
+                { key: 'image', label: 'Image' },
                 { key: 'username', sortable: false },
                 { key: 'recent', sortable: true },
                 { key: 'alltime', sortable: true }
